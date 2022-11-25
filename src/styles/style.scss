@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+// Define variable 
+//  -- COLORS --
+$background-color: #EFE9EB;
+$dark-blue: #544786;
+$highlight-brown: #9C8986;
+$second-brown: #C6B2AF;
+
+// -- Responsive Sizes --
+$small-width: 480px;
+$medium-width: 768px;
+$large-width: 1024px;
+$extra-large-with: 1920px;
+
+@mixin body {
+  color: $dark-blue;
+  font-size: 12px;
+  font-weight: 400px;
+
+  @media screen and (min-width: $medium-width) {
+    font-size: 20px;
+  }
+}
+
+@mixin title-1{
+  color: $dark-blue;
+  font-size: 24px;
+  font-weight: 700;
+   
+  @media screen and (min-width: $medium-width) {
+    font-size: 48px;
+  }
+}
+
+@mixin second-text{
+  color: $second-brown;
+  font-size: 14px;
+  font-weight: 700;
+
+   
+  @media screen and (min-width: $medium-width) {
+    font-size: 24px;
+  }
+}
+
+@mixin neumorphism-shadow {
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 
+  5px 5px 10px rgba(203, 198, 200, 0.5);
+}
+
+@mixin dark-neumorphism-shadow{
+  box-shadow: 5px 5px 10px #40476E,
+  -5px -5px 10px #566194;
+}
+
+@mixin selected-neumorphism-shadow {
+  box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.5), 
+  inset 5px 5px 10px rgba(203, 198, 200, 0.5);
+}
+
+.rounded{
+    border-radius: 50px;
+}
