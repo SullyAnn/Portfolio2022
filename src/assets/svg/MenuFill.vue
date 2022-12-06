@@ -15,6 +15,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../../styles/style.scss';
 
+svg{
+  fill: $dark-blue;
+}
 </style>

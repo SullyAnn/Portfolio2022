@@ -11,7 +11,7 @@ $second-brown: #C6B2AF;
 // -- Responsive Sizes --
 $small-width: 480px;
 $medium-width: 768px;
-$large-width: 1024px;
+$large-width: 1025px;
 $extra-large-with: 1920px;
 
 @mixin body {
@@ -46,6 +46,7 @@ $extra-large-with: 1920px;
 }
 
 @mixin neumorphism-shadow {
+  background-color: $background-color;
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 
   5px 5px 10px rgba(203, 198, 200, 0.5);
 }
@@ -63,3 +64,12 @@ $extra-large-with: 1920px;
 .rounded{
     border-radius: 50px;
 }
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+
